@@ -7,5 +7,4 @@ public interface Set501 {
     void add(Object o);
     void delete(Object o);
     void clean();
-//    Object[] getAll();
 }

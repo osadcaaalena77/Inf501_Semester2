@@ -1,4 +1,4 @@
-package ru.itis.inf501.lab2_4_homework_iterator;
+package ru.itis.inf501.lab2_4_homework;
 
 
 import java.util.Iterator;
@@ -109,6 +109,8 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
     public Iterator<T> iterator() {
         return new Iterator<T>() {
             int current = 0;
+            int i = 0;
+
             @Override
             public boolean hasNext() {
                 return current < size;
@@ -116,11 +118,60 @@ public class Set501Implement<T> implements Set501<T>, Iterable<T> {
 
             @Override
             public T next() {
-                return null;
+                Node node = null;
+                while(set[i] == null) {
+                    i += 1;
+                }
+                current++;
+                node = set[i];
+                set[i] = set[i].getNext();
+                return (T)node.getValue();
+
+
+
+
+
+
+
+
+
+//                if (set[i] == null) {
+//                    while (set[i] == null) {
+//                        i++;
+//                    }
+//                } else {
+//                    current++;
+//                    node = set[i];
+//                    set[i] = set[i].getNext();
+//                }
+//                return (T) node.getValue();
             }
         };
     }
 }
+// iterator
+//                if (set[i] != null) {
+//                    while(set[i] != null) {
+//                        set[i] = set[i].getNext();
+//                        return (T)set[current++];
+//                    }
+//                } else {
+//                    i++;
+//                }
+//                return (T)set[current];
+//            }
+
+//                if (set[i] != null) {
+//                    while(set[i] != null) {
+//                        current++;
+//                        Node node = set[i];
+//                        set[i] = set[i].getNext();
+//                        return (T)node.getValue();
+//                    }
+//                } else {
+//                    i++;
+//                }
+//            }
 
 
 

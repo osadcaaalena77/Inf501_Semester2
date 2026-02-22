@@ -1,6 +1,4 @@
-package ru.itis.inf501.lab2_4_homework_iterator;
-
-import java.util.Iterator;
+package ru.itis.inf501.lab2_4_homework;
 
 public interface Set501<T> {
     int size();

@@ -21,13 +21,13 @@ public class Test {
         set.delete(new Person("vf",Gender.FEMALE));
         System.out.println(set);
 
-        System.out.println((new Person("Fe",Gender.FEMALE)).hashCode() % 16);
-        System.out.println((new Person("Gra",Gender.MALE)).hashCode() % 16);
-        System.out.println((new Person("Алина",Gender.FEMALE)).hashCode() % 16);
-        System.out.println(Math.abs((new Person("Кристина",Gender.FEMALE)).hashCode()) % 16);
-        System.out.println((new Person("Диана",Gender.FEMALE)).hashCode() % 16);
-        System.out.println((new Person("hh",Gender.FEMALE)).hashCode() % 16);
-        System.out.println((new Person("vf",Gender.FEMALE)).hashCode() % 16);
+//        System.out.println((new Person("Fe",Gender.FEMALE)).hashCode() % 16);
+//        System.out.println((new Person("Gra",Gender.MALE)).hashCode() % 16);
+//        System.out.println((new Person("Алина",Gender.FEMALE)).hashCode() % 16);
+//        System.out.println(Math.abs((new Person("Кристина",Gender.FEMALE)).hashCode()) % 16);
+//        System.out.println((new Person("Диана",Gender.FEMALE)).hashCode() % 16);
+//        System.out.println((new Person("hh",Gender.FEMALE)).hashCode() % 16);
+//        System.out.println((new Person("vf",Gender.FEMALE)).hashCode() % 16);
 
 
     }
