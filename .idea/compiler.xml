@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="lab2_1_set" target="24" />
+      <module name="lab2_2_GenericList" target="24" />
+      <module name="lab2_3_Map" target="24" />
+      <module name="lab2_4_Iterator" target="24" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
